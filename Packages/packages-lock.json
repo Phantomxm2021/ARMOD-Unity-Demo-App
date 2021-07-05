@@ -18,15 +18,16 @@
       "url": "https://registry.npmjs.org"
     },
     "com.phantoms.armodcore": {
-      "version": "file:com.phantoms.armodcore",
+      "version": "0.0.3-preview.10",
       "depth": 0,
-      "source": "embedded",
+      "source": "registry",
       "dependencies": {
         "com.phantoms.actionnotificationmanager": "0.0.7-preview.3",
         "com.phantoms.armodpackagetools": "0.0.7-preview.3",
         "com.phantoms.webrequestextension": "0.0.7-preview.1",
         "com.phantoms.armodrenderingassistant": "0.0.6"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.phantoms.armodpackagetools": {
       "version": "0.0.7-preview.3",
