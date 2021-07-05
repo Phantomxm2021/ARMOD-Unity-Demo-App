@@ -21,6 +21,7 @@ namespace UnityARMODApp.Runtime
         private ARExperienceShowcasesMapper arExperienceShowcasesMapper;
         private RecommendShowcasesMapper recommendShowcasesMapper;
 
+        private bool initialized = false;
 
         /// <summary>
         /// Accessing the ARMOD Web Services API
@@ -51,6 +52,7 @@ namespace UnityARMODApp.Runtime
         /// </summary>
         private void Start()
         {
+            if (initialized) return;
             DetailPopWindow.MaskButton.onClick.AddListener(() =>
             {
                 //Hide Popwindow
@@ -62,6 +64,8 @@ namespace UnityARMODApp.Runtime
 
             CreateRecommendList();
             CreateShowcaseList();
+
+            initialized = true;
         }
 
         /// <summary>
@@ -95,7 +99,7 @@ namespace UnityARMODApp.Runtime
                 //Accessing and download to image from web url,It maybe return a `Sprite`
                 StartCoroutine(Utility.TryAcquireSpriteFromUri(new Uri(tmp_ShowcaseData.showcase_header),
                     tmp_RecommendElement.RecommendHeaderImage));
-                tmp_RecommendElement.ClickButton.onClick.AddListener( () =>
+                tmp_RecommendElement.ClickButton.onClick.AddListener(() =>
                 {
                     FixFreezeParameter(tmp_RecommendElement.ShowcaseId);
                 });
@@ -179,42 +183,43 @@ namespace UnityARMODApp.Runtime
                 DetailPopWindow.ARExperienceHeaderImage));
             StartCoroutine(Utility.TryAcquireSpriteFromUri(new Uri(tmp_ShowcaseDetailData.showcase_icon),
                 DetailPopWindow.ARExperienceIconImage));
-
-            //4. Add play ar event for button
-            DetailPopWindow.ARExperienceButton.onClick.AddListener(() =>
-            {
-           
-                //Find and accessing the `AppMain` script 
-                var tmp_ARPPMainScript = FindObjectOfType<AppMain>();
-
-                //Switch the user interface to AR mode
-                tmp_ARPPMainScript.Home.SetActive(false);
-                tmp_ARPPMainScript.ARView.SetActive(true);
-                tmp_ARPPMainScript.Background.alpha = 0;
-                tmp_ARPPMainScript.Background.gameObject.SetActive(false);
-
-                //Hide the Detail pop window
-                DetailPopWindow.PopWindow(false);
-
-                //Start AR
-                Utility.LaunchAR(FindObjectOfType<AppMain>().SDKConfiguration,
-                    tmp_ShowcaseDetailData.arexperience_uid);
-                
-
-                //Register event for AR user interface, Disable the AR and exit.
-                var tmp_CloseBtnGO = tmp_ARPPMainScript.ARView.transform.Find("Close");
-                tmp_CloseBtnGO.GetComponent<Button>().onClick.AddListener(() =>
+            
+                //4. Add play ar event for button
+                DetailPopWindow.ARExperienceButton.onClick.AddListener(() =>
                 {
-                    //Disabled the AR
-                    Utility.DisableAR();
+                    //Clean up all events
+                    DetailPopWindow.ARExperienceButton.onClick.RemoveAllListeners();
+                    
+                    //Find and accessing the `AppMain` script 
+                    var tmp_ARPPMainScript = FindObjectOfType<AppMain>();
 
-                    //We need reset user interface to Home from AR-View when disabled the AR
-                    tmp_ARPPMainScript.Home.SetActive(true);
-                    tmp_ARPPMainScript.ARView.SetActive(false);
-                    tmp_ARPPMainScript.Background.alpha = 1;
-                    tmp_ARPPMainScript.Background.gameObject.SetActive(true);
+                    //Switch the user interface to AR mode
+                    tmp_ARPPMainScript.Home.SetActive(false);
+                    tmp_ARPPMainScript.ARView.SetActive(true);
+                    tmp_ARPPMainScript.Background.alpha = 0;
+                    tmp_ARPPMainScript.Background.gameObject.SetActive(false);
+
+                    //Hide the Detail pop window
+                    DetailPopWindow.PopWindow(false);
+
+                    //Start AR
+                    Utility.LaunchAR(FindObjectOfType<AppMain>().SDKConfiguration,
+                        tmp_ShowcaseDetailData.arexperience_uid);
+
+                    //Register event for AR user interface, Disable the AR and exit.
+                    var tmp_CloseBtnGO = tmp_ARPPMainScript.ARView.transform.Find("Close");
+                    tmp_CloseBtnGO.GetComponent<Button>().onClick.AddListener(() =>
+                    {
+                        //Disabled the AR
+                        Utility.DisableAR();
+
+                        //We need reset user interface to Home from AR-View when disabled the AR
+                        tmp_ARPPMainScript.Home.SetActive(true);
+                        tmp_ARPPMainScript.ARView.SetActive(false);
+                        tmp_ARPPMainScript.Background.alpha = 1;
+                        tmp_ARPPMainScript.Background.gameObject.SetActive(true);
+                    });
                 });
-            });
         }
 
         private void FixFreezeParameter(string _showcaseId)
