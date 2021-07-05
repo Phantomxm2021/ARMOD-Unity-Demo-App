@@ -1,0 +1,19 @@
+{
+    "name": "UnityARMODApp.Runtime",
+    "rootNamespace": "UnityARMODApp.Runtime",
+    "references": [
+        "GUID:4819c5fac8a1f466e837edd5dc478bd9",
+        "GUID:4bfc083d294004a148c718a2546895c0",
+        "GUID:5639495e7c55c4e998eaa31431e1fd6a",
+        "GUID:8e4b22805b128544c875816e5bb32c91"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "com.Phantoms.NativePlugins",
+    "rootNamespace": "com.Phantoms.NativePlugins",
+    "references": [
+        "GUID:8dccfa2293aa647acbb83aea19cc9e42"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

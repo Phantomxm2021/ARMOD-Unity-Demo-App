@@ -1,0 +1,29 @@
+{
+  "name": "com.phantoms.armodcore",
+  "displayName": "ARMOD Core",
+  "version": "0.0.3-preview.10",
+  "unity": "2019.4",
+  "description": "This is the core of ARMOD. This package presents an interface for Unity developers to use, but doesn't implement any AR features itself. \n To use AR Foundation on a target device, you also need separate packages for the target platforms officially supported by Unity:",
+  "keywords": [
+    "xr",
+    "ar",
+    "augmented",
+    "reality",
+    "utility",
+    "utilities",
+    "foundation",
+    "core"
+  ],
+  "dependencies": {
+    "com.phantoms.actionnotificationmanager": "0.0.7-preview.3",
+    "com.phantoms.armodpackagetools": "0.0.7-preview.3",
+    "com.phantoms.webrequestextension": "0.0.7-preview.1",
+    "com.phantoms.armodrenderingassistant": "0.0.6"
+  },
+  "type": "library",
+  
+  "author": {
+    "name": "Phantoms",
+    "email": "phantomxm2021@gmail.com"
+  }
+}
