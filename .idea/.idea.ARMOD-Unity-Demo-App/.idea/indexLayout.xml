@@ -5,6 +5,7 @@
     <explicitIncludes>
       <Path>Library/PackageCache/com.phantoms.actionnotificationmanager@0.0.7-preview.4</Path>
       <Path>Library/PackageCache/com.phantoms.armodapi@0.0.7-preview.8</Path>
+      <Path>Library/PackageCache/com.phantoms.armodcore@0.0.3-preview.10</Path>
       <Path>Library/PackageCache/com.phantoms.armodpackagetools@0.0.7-preview.3</Path>
       <Path>Library/PackageCache/com.phantoms.armodprojectwizard@0.0.6-preview.8</Path>
       <Path>Library/PackageCache/com.phantoms.armodrenderingassistant@0.0.6</Path>
@@ -36,6 +37,7 @@
       <Path>Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.4</Path>
       <Path>Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7</Path>
       <Path>Library/PackageCache/com.unity.xr.management@4.0.1</Path>
+      <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
