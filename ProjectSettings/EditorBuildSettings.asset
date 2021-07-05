@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Artwork/Scenes/App.unity
     guid: 08b7e05e881a14dee955a01828f07984
   - enabled: 1
-    path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Initilizer.unity
-    guid: 15de3d341d70b430685dd6576af5739f
+    path: Assets/Artwork/Scenes/Initilizer.unity
+    guid: f3ac1381bf425440692a15af2ded9aaf
   - enabled: 1
-    path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Main.unity
-    guid: 168d84f18b28a43f99b2761f05816b99
+    path: Assets/Artwork/Scenes/Main.unity
+    guid: 4bd2d3abb657c460fb0ddec17301b9fb
   - enabled: 1
-    path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Clear.unity
-    guid: a68aaf7f526c94bdda317a7bb4d4d80f
+    path: Assets/Artwork/Scenes/Clear.unity
+    guid: 1a6a23e9331c946daa5134d91840d307
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f6f4ff9e9334e4aab8416ff8de3379e8, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0b78ce4339ffa4c4099f09bc472ba7a4, type: 2}

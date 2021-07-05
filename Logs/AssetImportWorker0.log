@@ -144,3 +144,155 @@ Received Import Request.
 Start importing Assets/Artwork/Scenes/App.unity using Guid(08b7e05e881a14dee955a01828f07984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fd9129f0fa0f699c25987e1ba53eb1') in 0.001649 seconds
   Import took 0.007304 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 494.886286 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Resources/Prefabs
+  artifactKey: Guid(e8537ee7f79474973b9ba7bf4621fbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Resources/Prefabs using Guid(e8537ee7f79474973b9ba7bf4621fbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e29f6a211bd575495029a8b553fb99') in 0.001106 seconds
+  Import took 0.008103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.187902 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Resources/Prefabs/AR Session.prefab
+  artifactKey: Guid(c38851f5513214d9eb3ba39f3d3cb2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Resources/Prefabs/AR Session.prefab using Guid(c38851f5513214d9eb3ba39f3d3cb2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff059b18fc8c634b5a93d260fa99cf0d') in 0.348192 seconds
+  Import took 0.354131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.199587 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Resources/Prefabs/EntryPoint.prefab
+  artifactKey: Guid(c584fdba576dc41ff8ec5cb991da637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Resources/Prefabs/EntryPoint.prefab using Guid(c584fdba576dc41ff8ec5cb991da637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb4141843876d57cd3dee027a54ebc8') in 0.011454 seconds
+  Import took 0.019839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001245 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Resources/Prefabs/EntryPoint.prefab
+  artifactKey: Guid(c584fdba576dc41ff8ec5cb991da637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Resources/Prefabs/EntryPoint.prefab using Guid(c584fdba576dc41ff8ec5cb991da637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb4141843876d57cd3dee027a54ebc8') in 0.005107 seconds
+  Import took 0.010934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.406214 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Initilizer.unity
+  artifactKey: Guid(15de3d341d70b430685dd6576af5739f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Scenes/Release/Initilizer.unity using Guid(15de3d341d70b430685dd6576af5739f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fd31ee2aa054ba76d8a3dd84955d80') in 0.001540 seconds
+  Import took 0.007879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.432417 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Main.unity
+  artifactKey: Guid(168d84f18b28a43f99b2761f05816b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Scenes/Release/Main.unity using Guid(168d84f18b28a43f99b2761f05816b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacfa40bf676021e69272af52800f2c9') in 0.001317 seconds
+  Import took 0.008143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.810084 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Clear.unity
+  artifactKey: Guid(a68aaf7f526c94bdda317a7bb4d4d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Scenes/Release/Clear.unity using Guid(a68aaf7f526c94bdda317a7bb4d4d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a3b67963900f30f3102dc1f9a0a2ea') in 0.001514 seconds
+  Import took 0.008160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001101 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/Clear.unity
+  artifactKey: Guid(a68aaf7f526c94bdda317a7bb4d4d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Scenes/Release/Clear.unity using Guid(a68aaf7f526c94bdda317a7bb4d4d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a3b67963900f30f3102dc1f9a0a2ea') in 0.001168 seconds
+  Import took 0.006278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.836876 seconds.
+  path: Packages/com.phantoms.armodcore/Assets/Scenes/Release/MainSettings.lighting
+  artifactKey: Guid(d0fe3b7b6522542f1992a717fbbc38d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.phantoms.armodcore/Assets/Scenes/Release/MainSettings.lighting using Guid(d0fe3b7b6522542f1992a717fbbc38d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3b90c5218307839b51fe57ed041a14') in 0.163022 seconds
+  Import took 0.169754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.409107 seconds.
+  path: Assets/Artwork/Scenes/Main.unity
+  artifactKey: Guid(4bd2d3abb657c460fb0ddec17301b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/Main.unity using Guid(4bd2d3abb657c460fb0ddec17301b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3205d064d65a0b09e190270717b031') in 0.001421 seconds
+  Import took 0.007428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.542671 seconds.
+  path: Assets/Artwork/Scenes/SampleSceneLightingSettings.lighting
+  artifactKey: Guid(477cc4148fad3449482a3bc3178594e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/SampleSceneLightingSettings.lighting using Guid(477cc4148fad3449482a3bc3178594e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8536f971d5a3aa486b8ee60509c5e5d5') in 0.003591 seconds
+  Import took 0.010217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.541249 seconds.
+  path: Assets/Artwork/Scenes/Main.unity
+  artifactKey: Guid(4bd2d3abb657c460fb0ddec17301b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/Main.unity using Guid(4bd2d3abb657c460fb0ddec17301b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b4ce7a9419c9eb209ba45880585259') in 0.002235 seconds
+  Import took 0.008978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/Artwork/Scenes/Main.unity
+  artifactKey: Guid(4bd2d3abb657c460fb0ddec17301b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/Main.unity using Guid(4bd2d3abb657c460fb0ddec17301b9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b4ce7a9419c9eb209ba45880585259') in 0.001124 seconds
+  Import took 0.006538 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 15.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 32 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.1 MB.
+System memory in use after: 192.4 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4316.
+Total: 8.038043 ms (FindLiveObjects: 0.479246 ms CreateObjectMapping: 0.365678 ms MarkObjects: 7.127075 ms  DeleteObjects: 0.064795 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.682074 seconds.
+  path: Assets/Artwork/Scenes/MainSettings.lighting
+  artifactKey: Guid(f19cdda7865af47a58b8f3c6a18a5a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/MainSettings.lighting using Guid(f19cdda7865af47a58b8f3c6a18a5a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550c22312071e54923e2bbe31c3fb490') in 0.001873 seconds
+  Import took 0.008618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.949162 seconds.
+  path: Assets/Artwork/Scenes/Clear.unity
+  artifactKey: Guid(1a6a23e9331c946daa5134d91840d307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/Clear.unity using Guid(1a6a23e9331c946daa5134d91840d307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b828369148fd583ea6ef41b737fc9a29') in 0.001303 seconds
+  Import took 0.007839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000626 seconds.
+  path: Assets/Artwork/Scenes/Clear.unity
+  artifactKey: Guid(1a6a23e9331c946daa5134d91840d307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/Scenes/Clear.unity using Guid(1a6a23e9331c946daa5134d91840d307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b828369148fd583ea6ef41b737fc9a29') in 0.001112 seconds
+  Import took 0.007721 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 14.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 32 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.5 MB.
+System memory in use after: 193.7 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4316.
+Total: 3.490487 ms (FindLiveObjects: 0.421597 ms CreateObjectMapping: 0.191919 ms MarkObjects: 2.822342 ms  DeleteObjects: 0.053343 ms)
+
