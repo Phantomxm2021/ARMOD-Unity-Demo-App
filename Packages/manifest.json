@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.phantoms.armodcore": "0.0.3-preview.10",
+    "com.phantoms.armodcore": "0.0.3-preview.11",
     "com.phantoms.armodprojectwizard": "0.0.6-preview.8",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.3.9",
