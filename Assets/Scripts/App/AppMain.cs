@@ -18,7 +18,11 @@ namespace UnityARMODApp.Runtime
 
         private void Awake()
         {
+            //Run in editor only! 
+#if UNITY_EDITOR
             Utility.CleanCache();
+#endif
+
             DontDestroyOnLoad(this.gameObject);
             canvasRectTransform = GetComponent<RectTransform>();
             AdaptRecommendView();
@@ -34,7 +38,7 @@ namespace UnityARMODApp.Runtime
                 ARView.SetActive(false);
                 Background.alpha = 1;
                 Background.gameObject.SetActive(true);
-                
+
                 Utility.DisableAR();
             });
 
