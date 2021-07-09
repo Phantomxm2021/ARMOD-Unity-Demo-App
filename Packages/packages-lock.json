@@ -18,7 +18,7 @@
       "url": "https://registry.npmjs.org"
     },
     "com.phantoms.armodcore": {
-      "version": "0.0.3-preview.11",
+      "version": "0.0.3-preview.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
