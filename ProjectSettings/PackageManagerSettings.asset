@@ -28,7 +28,7 @@ MonoBehaviour:
     m_Name: ARMOD
     m_Url: https://registry.npmjs.org
     m_Scopes:
-    - com.phantoms
+    - com.phantomsxr
     m_IsDefault: 0
     m_Capabilities: 0
   m_UserSelectedRegistryName: ARMOD
@@ -40,12 +40,12 @@ MonoBehaviour:
       m_Name: ARMOD
       m_Url: https://registry.npmjs.org
       m_Scopes:
-      - com.phantoms
+      - com.phantomsxr
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
     m_Name: ARMOD
     m_Url: https://registry.npmjs.org
     m_Scopes:
-    - com.phantoms
+    - com.phantomsxr
     m_SelectedScopeIndex: 0
