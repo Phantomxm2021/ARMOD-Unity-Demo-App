@@ -17,7 +17,6 @@ namespace UnityARMODApp.Runtime
         public Transform RecommendListHolder;
         public Transform ARExperienceListHolder;
         public DetailPopWindow DetailPopWindow;
-        public string Token;
         private ARExperienceShowcasesMapper arExperienceShowcasesMapper;
         private RecommendShowcasesMapper recommendShowcasesMapper;
 
@@ -33,10 +32,10 @@ namespace UnityARMODApp.Runtime
         {
             string tmp_Response = string.Empty;
             IDictionary<string, string> tmp_Headers = new Dictionary<string, string>();
-            tmp_Headers.Add("Authorization", $"Token {Token}");
+            tmp_Headers.Add("Authorization", $"Token {FindObjectOfType<AppMain>().SDKConfiguration.dashboardConfig.token}");
             tmp_Headers.Add("Content-Type", "application/x-www-form-urlencoded");
             var tmp_Form = new WWWForm();
-            tmp_Form.AddField("package_id", "com.phantoms.armod");
+            tmp_Form.AddField("package_id", Application.identifier);
             tmp_Form.AddField("showcase_uid", _showcaseId);
             var tmp_WebRequestSender = new WebRequestWithProgress(_timeout: 60);
             tmp_Response = await tmp_WebRequestSender.SendRequest(new Uri(_url),
@@ -140,7 +139,7 @@ namespace UnityARMODApp.Runtime
                     tmp_ARExperienceSingleItemElement.ShowcaseIconImage));
 
                 //Register click event for every ar experience element 
-                tmp_ARExperienceSingleItemElement.ClickedEvent = async _showcaseId =>
+                tmp_ARExperienceSingleItemElement.ClickedEvent = _showcaseId =>
                 {
                     FixFreezeParameter(tmp_ARExperienceSingleItemElement.ShowcaseId);
                 };

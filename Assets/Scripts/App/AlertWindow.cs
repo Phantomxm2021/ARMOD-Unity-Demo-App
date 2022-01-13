@@ -13,6 +13,7 @@ namespace UnityARMODApp.Runtime
         private void Start()
         {
             animator = GetComponent<Animator>();
+            Close.onClick.AddListener(Utility.DisableAR);
         }
 
         public void ShowAlertWindow(bool _show)

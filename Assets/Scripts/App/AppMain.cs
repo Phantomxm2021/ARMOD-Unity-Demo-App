@@ -1,6 +1,8 @@
+using System.Threading.Tasks;
 using com.Phantoms.NativePlugins;
 using com.Phantoms.SDKConfigures.Runtime;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace UnityARMODApp.Runtime
 {
@@ -10,66 +12,66 @@ namespace UnityARMODApp.Runtime
         public GameObject Home;
         public GameObject ARView;
         public CanvasGroup Background;
-        public RectTransform RecommendScrollView;
-        public RectTransform AllScrollView;
         public AlertWindow AlertWindow;
+        public LoadingProgressView LoadingView;
 
         private RectTransform canvasRectTransform;
+        private EventSystem appBuiltInEventSystem;
 
         private void Awake()
         {
-            //Run in editor only! 
-#if UNITY_EDITOR
-            Utility.CleanCache();
-#endif
-
             DontDestroyOnLoad(this.gameObject);
             canvasRectTransform = GetComponent<RectTransform>();
-            AdaptRecommendView();
-            AdaptAllScrollView();
         }
 
         private void Start()
         {
-            AlertWindow.Close.onClick.AddListener(() =>
+            appBuiltInEventSystem = EventSystem.current;
+
+            AlertWindow.Close.onClick.AddListener(Utility.DisableAR);
+
+
+            NativeAPI.NeedInstallARCoreServicesEventHandle += () =>
+            {
+                AlertWindow.gameObject.SetActive(true);
+                AlertWindow.BodyText.text = "Your device is available ARMOD,But you need to install ARCore Service!";
+                AlertWindow.ShowAlertWindow(true);
+            };
+
+            NativeAPI.ThrowExceptionEventHandle += (_message, _errorcode) =>
+            {
+                AlertWindow.gameObject.SetActive(true);
+                AlertWindow.BodyText.text = $"ERROR:{_message},ERROR Code:{_errorcode}";
+                AlertWindow.ShowAlertWindow(true);
+                Debug.LogError(_message);
+            };
+            NativeAPI.AddLoadingOverlayEventHandle += () => { LoadingView.gameObject.SetActive(true); };
+            NativeAPI.RemoveLoadingOverlayEventHandle += async () =>
+            {
+                LoadingView.gameObject.SetActive(false);
+
+                await Task.Delay(1000);
+                //Avoid more then one event system in the scene.
+                var tmp_EventSystems = FindObjectsOfType<EventSystem>();
+                if (tmp_EventSystems.Length > 1)
+                    appBuiltInEventSystem.gameObject.SetActive(false);
+            };
+            NativeAPI.UpdateLoadingProgressEventHandle += (_progress) =>
+            {
+                LoadingView.progressText.text = $"{_progress * 100f}%";
+            };
+            NativeAPI.OnARMODLaunchEventHandle += () => { Debug.Log("ARMOD Launched"); };
+            NativeAPI.OnARMODExitEventHandle += () =>
             {
                 AlertWindow.ShowAlertWindow(false);
                 Home.SetActive(true);
                 ARView.SetActive(false);
                 Background.alpha = 1;
                 Background.gameObject.SetActive(true);
-
-                Utility.DisableAR();
-            });
-
-            NativeAPI.ThrowExceptionEventHandle += (_s, _i) =>
-            {
-                AlertWindow.gameObject.SetActive(true);
-                AlertWindow.BodyText.text = $"ERROR:{_s},ERROR Code:{_i}";
-                AlertWindow.ShowAlertWindow(true);
-                Debug.LogError(_s);
+                
+                if (!appBuiltInEventSystem.gameObject.activeSelf)
+                    appBuiltInEventSystem.gameObject.SetActive(true);
             };
-
-            NativeAPI.OnARMODLaunchEventHandle += () => { Debug.Log("ARMOD Launched"); };
-        }
-
-        private void AdaptRecommendView()
-        {
-            var tmp_Rect = canvasRectTransform.rect;
-
-            //Resize our recommend scroll view. Make it looks beautiful.
-            //1.618f is Golden ratio value.
-            //46 and 28.7294f are the height of text label
-            RecommendScrollView.sizeDelta =
-                new Vector2(RecommendScrollView.sizeDelta.x, tmp_Rect.width / 1.618f + 46 + 28.7294f);
-        }
-
-
-        private void AdaptAllScrollView()
-        {
-            //Connect to the bottom of the Recommend UI
-            AllScrollView.offsetMax =
-                new Vector2(AllScrollView.offsetMax.x, RecommendScrollView.offsetMin.y);
         }
     }
 }
