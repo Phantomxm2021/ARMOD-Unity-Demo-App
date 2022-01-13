@@ -2,6 +2,8 @@
 
 This warehouse is an example of secondary development of ARMOD SDK based on Unity.
 
+https://www.youtube.com/watch?v=mlVZ_3atveg
+
 # Build Demo
 - Go to `Artwork`->`Scenes` folder and double click to open `App.unity` scene.
 
