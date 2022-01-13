@@ -4,11 +4,13 @@ This warehouse is an example of secondary development of ARMOD SDK based on Unit
 
 ![Preview](ScreenShot/Preview.png)
 
-https://github.com/Phantomxm2021/ARMOD-Unity-Demo-App/blob/01007ae32f04ec0a02a7cdcd16984ec1277321fe/ScreenShot/PreviewVideo.mp4
 
-ScreenShot/PreviewVideo.mp4
+https://user-images.githubusercontent.com/82647748/149273814-3f4aca9b-d23b-454b-aa93-03a16569129f.mp4
+
 
 # Build Demo
+
+
 - Go to `Artwork`->`Scenes` folder and double click to open `App.unity` scene.
 
   ![App Scene](ScreenShot/01.jpg)
