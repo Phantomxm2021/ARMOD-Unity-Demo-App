@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/82647748/149273814-3f4aca9b-d23b-454b-
 
   ![App Scene](ScreenShot/01.jpg)
 
-- Switch to `iOS` or `Androdi` platform in Player Settings
+- Switch to `iOS` or `Android` platform in Player Settings
 - Build your owner application
 
 
