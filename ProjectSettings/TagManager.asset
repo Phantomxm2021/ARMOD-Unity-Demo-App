@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UICamera
+  - ARSessionOrigin
+  - ARSession
+  - Enemy
+  - Item
+  - Projectile
+  - NPC
+  - Fx
   layers:
   - Default
   - TransparentFX
@@ -11,14 +19,14 @@ TagManager:
   - 
   - Water
   - UI
+  - Enemy
+  - Player
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Item
+  - NPC
+  - Projectile
+  - Other
   - 
   - 
   - 
