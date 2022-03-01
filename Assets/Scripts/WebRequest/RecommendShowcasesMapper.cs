@@ -7,20 +7,17 @@ namespace UnityARMODApp.Runtime
     {
         public int code;
         public string msg;
-        public List<RecommendShowcaseData> data;
+        public List<RecommendData> data;
     }
 
     [System.Serializable]
-    public class RecommendShowcaseData
+    public class RecommendData
     {
         public int app_uid;
         public int user_uid;
-        public string arexperience_uid;
-        public string showcase_uid;
-        public string showcase_name;
-        public string showcase_brief;
-        public string showcase_icon;
-        public string showcase_header;
-        public List<string> showcase_not_index_tags;
+        public string project_id;
+        public string project_name;
+        public string project_brief;
+        public string project_header;
     }
 }

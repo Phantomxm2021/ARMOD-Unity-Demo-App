@@ -241,10 +241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b47e47b99c4de7aae3d09418802ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowcaseTitleText: {fileID: 1235083883490058297}
-  ShowcaseBriefText: {fileID: 1235083884985393674}
-  ShowcaseIconImage: {fileID: 1235083883660081062}
-  ShowcaseId: 0
+  ProjectTitleText: {fileID: 1235083883490058297}
+  ProjectBriefText: {fileID: 1235083884985393674}
+  ProjectIconImage: {fileID: 1235083883660081062}
+  ProjectId: 
 --- !u!114 &-8079014591036509153
 MonoBehaviour:
   m_ObjectHideFlags: 0
