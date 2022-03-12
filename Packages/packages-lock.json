@@ -1,36 +1,39 @@
 {
   "dependencies": {
     "com.phantomsxr.actionnotification": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.actionnotifcationmanager",
+      "version": "1.0.0-preview.4",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.armodapi": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodapi",
+      "version": "1.0.0-preview.3",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.phantomsxr.armodpackagetools": "1.0.0-preview.5",
         "com.phantomsxr.actionnotification": "1.0.0-preview.3"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.armodcore": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodcore",
+      "version": "1.0.0-preview.9",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.phantomsxr.actionnotification": "1.0.0-preview.4",
         "com.phantomsxr.armodpackagetools": "1.0.0-preview.5",
         "com.phantomsxr.webrequestextension": "1.0.0-preview.2",
         "com.phantomsxr.armodrenderingassistant": "1.0.0-preview.2",
         "com.phantomsxr.mirrorextension": "1.0.0-preview.3"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.armodpackagetools": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodpackagetools",
+      "version": "1.0.0-preview.5",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.unity.scriptablebuildpipeline": "1.14.1",
         "com.phantomsxr.webrequestextension": "1.0.0-preview.2",
@@ -39,24 +42,26 @@
         "com.unity.xr.arkit-face-tracking": "4.1.7",
         "com.unity.xr.arcore": "4.1.7",
         "com.unity.xr.interaction.toolkit": "1.0.0-pre.5"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.armodrenderingassistant": {
       "version": "1.0.0-preview.2",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.immersalsdk": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.immersal",
+      "version": "1.0.0-preview.2",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.unity.xr.arfoundation": "4.1.7",
         "com.unity.editorcoroutines": "1.0.0",
         "com.phantomsxr.actionnotification": "1.0.0-preview.3"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.mirrorextension": {
       "version": "1.0.0-preview.3",
@@ -65,13 +70,21 @@
       "dependencies": {},
       "url": "https://registry.npmjs.org"
     },
-    "com.phantomsxr.visualscriptingextension": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.VisualScriptingExtension",
+    "com.phantomsxr.uiextenion": {
+      "version": "1.0.0-preview.3",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.phantomsxr.visualscriptingextension": {
+      "version": "1.0.0-preview.6",
+      "depth": 0,
+      "source": "registry",
       "dependencies": {
         "com.unity.visualscripting": "1.7.7"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.phantomsxr.webrequestextension": {
       "version": "1.0.0-preview.2",
@@ -85,16 +98,6 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {}
-    },
-    "com.unity.barracuda": {
-      "version": "file:S:/Projects/PhantomsXR/UnityProjects/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/barracuda-release-release-2.4.0",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.burst": "1.6.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.imageconversion": "1.0.0"
-      }
     },
     "com.unity.burst": {
       "version": "1.6.4",
@@ -318,7 +321,7 @@
     },
     "com.unity.xr.arkit-face-tracking": {
       "version": "4.2.2",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arkit": "4.2.2",
