@@ -100,3 +100,12 @@ The following packages were updated:
   com.unity.render-pipelines.universal from version 12.1.2 to 12.1.4
   com.unity.xr.arcore from version 4.2.1 to 4.2.2
   com.unity.xr.arkit from version 4.2.1 to 4.2.2
+
+=== Wed Mar  2 09:21:27 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.vscode from version 1.2.4 to 1.2.5
+  com.unity.timeline from version 1.6.3 to 1.6.4
