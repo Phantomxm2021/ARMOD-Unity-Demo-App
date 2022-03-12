@@ -7,7 +7,6 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Object = UnityEngine.Object;
 
 namespace UnityARMODApp.Runtime
 {

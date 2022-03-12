@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -56,10 +55,12 @@ namespace UnityARMODApp.Runtime
 
         private void GetProjectList(string _url, int _page_num, int _page_size, Action<string> _callback)
         {
-            var tmp_WebRequest = UnityWebRequest.Get($"{_url}?page_num={_page_num}&page_size={_page_size}");
+            var tmp_WebRequest =
+                UnityWebRequest.Get(
+                    $"{_url}?page_num={_page_num}&page_size={_page_size}&packageid={Application.identifier}");
             tmp_WebRequest.SetRequestHeader("Authorization",
                 $"Token {FindObjectOfType<AppMain>().SDKConfiguration.dashboardConfig.token}");
-            tmp_WebRequest.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            // tmp_WebRequest.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             tmp_WebRequest.SendWebRequest().completed += operation =>
             {
                 switch (tmp_WebRequest.result)
@@ -208,8 +209,6 @@ namespace UnityARMODApp.Runtime
             //2. Show pop window
             DetailPopWindow.gameObject.SetActive(true);
             DetailPopWindow.PopWindow(true);
-            Debug.Log(Path.Combine(ConstKey.CONST_BASE_GATEWAY_KEY,
-                ConstKey.CONST_GET_SHOWCASE_DETAIL_KEY));
             var tmp_QueryData = await NetworkQuery(Path.Combine(ConstKey.CONST_BASE_GATEWAY_KEY,
                 ConstKey.CONST_GET_SHOWCASE_DETAIL_KEY), tmp_Showcase.project_id);
             var tmp_ProjectDetailData = JsonUtility.FromJson<ProjectDetail>(tmp_QueryData).data;
