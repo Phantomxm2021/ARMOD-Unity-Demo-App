@@ -7,7 +7,7 @@
     <assembly fullname="com.PhantomsXR.Recorders.Runtime" preserve="all"/>
     <assembly fullname="com.PhantomsXR.BarracudaExtension.Runtime" preserve="all"/>
     <assembly fullname="comPhantomsXR.Recorders.Libs" preserve="all"/>
-<!--    <assembly fullname="com.Phantoms.XRInteractionExtension.Runtime" preserve="all"/>-->
+    <assembly fullname="com.Phantoms.UIExtension.Runtime" preserve="all"/>
     <assembly fullname="com.Phantoms.ILRuntime.Adapter" preserve="all"/>
     <assembly fullname="com.Phantoms.ILRuntime" preserve="all"/>
     <assembly fullname="com.Phantoms.ILRuntime.Runtime.CLR" preserve="all"/>
