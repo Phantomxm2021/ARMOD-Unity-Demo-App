@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< Updated upstream
     "com.phantomsxr.actionnotification": "0.0.4-alpha.1",
     "com.phantomsxr.armodapi": "0.0.4-alpha.1",
     "com.phantomsxr.armodcore": "1.0.0-preview.3",
@@ -9,19 +10,45 @@
     "com.phantomsxr.mirrorextension": "1.0.0-preview.3",
     "com.phantomsxr.visualscriptingextension": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-DevelopmentKit/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.VisualScriptingExtension",
     "com.phantomsxr.webrequestextension": "0.0.4-alpha.1",
+=======
+    "com.phantomsxr.actionnotification": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.actionnotifcationmanager",
+    "com.phantomsxr.armodapi": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodapi",
+    "com.phantomsxr.armodpackagetools": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodpackagetools",
+    "com.phantomsxr.armodrenderingassistant": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodrenderingassistant",
+    "com.phantomsxr.foundation": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.foundation",
+    "com.phantomsxr.ilcore": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.ilcore",
+    "com.phantomsxr.immersalsdk": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.immersal",
+    "com.phantomsxr.mirrorextension": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.MirrorExtension",
+    "com.phantomsxr.uiextenion": "1.0.0-preview.3",
+    "com.phantomsxr.visualscriptingextension": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.VisualScriptingExtension",
+    "com.phantomsxr.webrequestextension": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.webrequestextension",
+    "com.phantomsxr.xrmod.handheldar": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.xrmodcore-handheldar",
+    "com.phantomsxr.xrmodenginesettings": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.xrmodenginesettings",
+>>>>>>> Stashed changes
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.15.4",
     "com.unity.ide.rider": "3.0.7",
     "com.unity.ide.visualstudio": "2.0.12",
     "com.unity.ide.vscode": "1.2.4",
+<<<<<<< Updated upstream
     "com.unity.render-pipelines.universal": "12.1.2",
+=======
+    "com.unity.render-pipelines.universal": "12.1.7",
+>>>>>>> Stashed changes
     "com.unity.test-framework": "1.1.29",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.3",
     "com.unity.ugui": "1.0.0",
+<<<<<<< Updated upstream
     "com.unity.xr.arcore": "4.2.1",
     "com.unity.xr.arkit": "4.2.1",
     "com.unity.xr.interaction.toolkit": "1.0.0-pre.4",
+=======
+    "com.unity.xr.arcore": "4.2.2",
+    "com.unity.xr.arkit": "4.2.2",
+    "com.unity.xr.arkit-face-tracking": "4.2.3",
+    "com.unity.xr.interaction.toolkit": "2.0.0",
+>>>>>>> Stashed changes
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

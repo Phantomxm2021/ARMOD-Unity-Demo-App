@@ -10,7 +10,7 @@ namespace UnityEngine.UI.Extensions
 {
     [CustomEditor(typeof(Scroller))]
     [CanEditMultipleObjects]
-    public class ScrollerEditor : Editor
+    public class ScrollerEditor : UnityEditor.Editor
     {
         SerializedProperty viewport;
         SerializedProperty scrollDirection;

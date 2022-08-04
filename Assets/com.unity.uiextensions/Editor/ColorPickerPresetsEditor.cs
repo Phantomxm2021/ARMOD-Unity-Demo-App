@@ -4,7 +4,7 @@ using UnityEditor;
 namespace UnityEngine.UI.Extensions.ColorPicker
 {
 	[CustomEditor(typeof(ColorPickerPresets))]
-	public class ColorPickerPresetsEditor : Editor
+	public class ColorPickerPresetsEditor : UnityEditor.Editor
 	{
 		public override void OnInspectorGUI()
 		{

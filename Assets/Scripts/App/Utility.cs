@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
 using System.Threading.Tasks;
-using com.Phantoms.SDKConfigures.Runtime;
-using com.Phantoms.SDKEntry.Runtime;
+using com.phantoms.models.Runtime;
+using SDKEntry.Runtime;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -62,7 +62,7 @@ namespace UnityARMODApp.Runtime
             //Init and launch
             var tmp_SDKEntryPoint = UnityEngine.Object.FindObjectOfType<SDKEntryPoint>();
             tmp_SDKEntryPoint.InitSDK(JsonUtility.ToJson(_configuration));
-            tmp_SDKEntryPoint.LaunchARQuery(_arExperienceId);
+            tmp_SDKEntryPoint.LaunchXRQuery(_arExperienceId);
             
         }
 

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
-using com.Phantoms.NativePlugins;
-using com.Phantoms.SDKConfigures.Runtime;
+using com.phantoms.models.Runtime;
+using NativePlugins.Plugin;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -28,7 +28,7 @@ namespace UnityARMODApp.Runtime
         {
             appBuiltInEventSystem = EventSystem.current;
 
-            AlertWindow.Close.onClick.AddListener(Utility.DisableAR);
+            //AlertWindow.Close.onClick.AddListener(Utility.DisableAR);
 
 
             NativeAPI.NeedInstallARCoreServicesEventHandle += () =>

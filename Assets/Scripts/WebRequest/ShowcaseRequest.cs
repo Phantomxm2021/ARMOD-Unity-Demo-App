@@ -61,7 +61,7 @@ namespace UnityARMODApp.Runtime
                 DetailPopWindow.ARExperienceButton.onClick.RemoveAllListeners();
             });
 
-            CreateRecommendList();
+            //CreateRecommendList();
             CreateShowcaseList();
 
             initialized = true;

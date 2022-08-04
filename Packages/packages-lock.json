@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.phantomsxr.actionnotification": {
+<<<<<<< Updated upstream
       "version": "1.0.0-preview.3",
       "depth": 1,
       "source": "registry",
@@ -19,9 +20,19 @@
     },
     "com.phantomsxr.armodcore": {
       "version": "1.0.0-preview.3",
+=======
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.actionnotifcationmanager",
       "depth": 0,
-      "source": "registry",
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.phantomsxr.armodapi": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodapi",
+>>>>>>> Stashed changes
+      "depth": 0,
+      "source": "local",
       "dependencies": {
+<<<<<<< Updated upstream
         "com.phantomsxr.actionnotification": "1.0.0-preview.2",
         "com.phantomsxr.armodpackagetools": "1.0.0-preview.2",
         "com.phantomsxr.webrequestextension": "1.0.0-preview.2",
@@ -34,17 +45,28 @@
       "version": "1.0.0-preview.2",
       "depth": 1,
       "source": "registry",
+=======
+        "com.phantomsxr.armodpackagetools": "1.0.0",
+        "com.phantomsxr.actionnotification": "2.0.0-preview.1",
+        "com.unity.render-pipelines.universal": "12.1.6"
+      }
+    },
+    "com.phantomsxr.armodpackagetools": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodpackagetools",
+      "depth": 0,
+      "source": "local",
+>>>>>>> Stashed changes
       "dependencies": {
         "com.unity.scriptablebuildpipeline": "1.14.1",
-        "com.phantomsxr.webrequestextension": "1.0.0-preview.2",
-        "com.unity.xr.arfoundation": "4.1.7",
-        "com.unity.xr.arkit": "4.1.7",
-        "com.unity.xr.arkit-face-tracking": "4.1.7",
-        "com.unity.xr.arcore": "4.1.7",
-        "com.unity.xr.interaction.toolkit": "1.0.0-pre.5"
-      },
-      "url": "https://registry.npmjs.org"
+        "com.phantomsxr.webrequestextension": "1.0.0",
+        "com.unity.xr.arfoundation": "4.2.3",
+        "com.unity.xr.arkit": "4.2.3",
+        "com.unity.xr.arkit-face-tracking": "4.2.3",
+        "com.unity.xr.arcore": "4.2.3",
+        "com.unity.xr.interaction.toolkit": "2.1.0-pre.1"
+      }
     },
+<<<<<<< Updated upstream
     "com.phantomsxr.armodprojectwizard": {
       "version": "1.0.0-preview.2",
       "depth": 0,
@@ -70,34 +92,96 @@
       "version": "1.0.0-preview.2",
       "depth": 1,
       "source": "registry",
+=======
+    "com.phantomsxr.armodrenderingassistant": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.armodrenderingassistant",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.phantomsxr.foundation": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.foundation",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.phantomsxr.ilcore": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.ilcore",
+      "depth": 0,
+      "source": "local",
       "dependencies": {
-        "com.unity.xr.arfoundation": "4.1.7",
+        "com.phantomsxr.actionnotification": "2.0.0-preview.1",
+        "com.phantomsxr.armodpackagetools": "1.0.0",
+        "com.phantomsxr.armodapi": "2.0.0-preview.1",
+        "com.phantomsxr.mirrorextension": "2.0.0-preview.1",
+        "com.unity.xr.interaction.toolkit": "2.1.0-pre.1"
+      }
+    },
+    "com.phantomsxr.immersalsdk": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.immersal",
+      "depth": 0,
+      "source": "local",
+>>>>>>> Stashed changes
+      "dependencies": {
+        "com.unity.xr.arfoundation": "4.2.3",
         "com.unity.editorcoroutines": "1.0.0",
-        "com.phantomsxr.actionnotification": "1.0.0-preview.3"
-      },
-      "url": "https://registry.npmjs.org"
+        "com.phantomsxr.actionnotification": "2.0.0-preview.1"
+      }
     },
     "com.phantomsxr.mirrorextension": {
-      "version": "1.0.0-preview.3",
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.MirrorExtension",
       "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.npmjs.org"
+      "source": "local",
+      "dependencies": {}
     },
     "com.phantomsxr.visualscriptingextension": {
+<<<<<<< Updated upstream
       "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-DevelopmentKit/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.VisualScriptingExtension",
       "depth": 0,
       "source": "local",
       "dependencies": {
         "com.unity.visualscripting": "1.7.6"
+=======
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.PhantomsXR.VisualScriptingExtension",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.visualscripting": "1.7.7"
+>>>>>>> Stashed changes
       }
     },
     "com.phantomsxr.webrequestextension": {
-      "version": "1.0.0-preview.2",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.npmjs.org"
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.webrequestextension",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.phantomsxr.xrmod.handheldar": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.xrmodcore-handheldar",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.phantomsxr.actionnotification": "2.0.0-preview.1",
+        "com.phantomsxr.armodpackagetools": "1.0.0",
+        "com.phantomsxr.webrequestextension": "1.0.0",
+        "com.phantomsxr.armodrenderingassistant": "1.0.0",
+        "com.phantomsxr.mirrorextension": "2.0.0-preview.1",
+        "com.phantomsxr.foundation": "2.0.0-preview.1",
+        "com.phantomsxr.immersalsdk": "2.0.0-preview.1"
+      }
+    },
+    "com.phantomsxr.xrmodenginesettings": {
+      "version": "file:/Users/nswell/Documents/PhantomsXR/Projects/ARMODs/Unity/ARMOD-SDK/ARMOD-DevelopmentKit/Packages/com.phantomsxr.xrmodenginesettings",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.phantomsxr.armodapi": "2.0.0-preview.1",
+        "com.phantomsxr.armodpackagetools": "1.0.0",
+        "com.phantomsxr.actionnotification": "2.0.0-preview.1",
+        "com.phantomsxr.armodrenderingassistant": "1.0.0",
+        "com.phantomsxr.immersalsdk": "1.0.0",
+        "com.phantomsxr.webrequestextension": "1.0.0"
+      }
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -106,7 +190,11 @@
       "dependencies": {}
     },
     "com.unity.burst": {
+<<<<<<< Updated upstream
       "version": "1.6.0",
+=======
+      "version": "1.6.6",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -173,21 +261,30 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
-      "version": "1.2.5",
+      "version": "1.2.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.newtonsoft-json": {
+<<<<<<< Updated upstream
       "version": "2.0.0",
       "depth": 1,
+=======
+      "version": "3.0.2",
+      "depth": 2,
+>>>>>>> Stashed changes
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
+<<<<<<< Updated upstream
       "version": "12.1.2",
+=======
+      "version": "12.1.7",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "builtin",
       "dependencies": {
@@ -197,12 +294,17 @@
       }
     },
     "com.unity.render-pipelines.universal": {
+<<<<<<< Updated upstream
       "version": "12.1.2",
+=======
+      "version": "12.1.7",
+>>>>>>> Stashed changes
       "depth": 0,
       "source": "builtin",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
         "com.unity.burst": "1.5.0",
+<<<<<<< Updated upstream
         "com.unity.render-pipelines.core": "12.1.2",
         "com.unity.shadergraph": "12.1.2"
       }
@@ -210,6 +312,15 @@
     "com.unity.scriptablebuildpipeline": {
       "version": "1.19.3",
       "depth": 2,
+=======
+        "com.unity.render-pipelines.core": "12.1.7",
+        "com.unity.shadergraph": "12.1.7"
+      }
+    },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "1.20.1",
+      "depth": 1,
+>>>>>>> Stashed changes
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -222,20 +333,30 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.0.1",
+      "version": "1.4.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0"
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.0.2",
+        "com.unity.modules.androidjni": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
+<<<<<<< Updated upstream
       "version": "12.1.2",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.render-pipelines.core": "12.1.2",
+=======
+      "version": "12.1.7",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.render-pipelines.core": "12.1.7",
+>>>>>>> Stashed changes
         "com.unity.searcher": "4.9.1"
       }
     },
@@ -290,6 +411,7 @@
       }
     },
     "com.unity.visualscripting": {
+<<<<<<< Updated upstream
       "version": "file:com.unity.visualscripting@1.7.6",
       "depth": 0,
       "source": "embedded",
@@ -304,6 +426,23 @@
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arsubsystems": "4.2.1",
+=======
+      "version": "1.7.8",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.arcore": {
+      "version": "4.2.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.arsubsystems": "4.2.3",
+>>>>>>> Stashed changes
         "com.unity.xr.management": "4.0.1",
         "com.unity.modules.androidjni": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0"
@@ -311,39 +450,69 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arfoundation": {
+<<<<<<< Updated upstream
       "version": "4.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arsubsystems": "4.2.1",
+=======
+      "version": "4.2.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.arsubsystems": "4.2.3",
+>>>>>>> Stashed changes
         "com.unity.xr.management": "4.0.1",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arkit": {
+<<<<<<< Updated upstream
       "version": "4.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.editorcoroutines": "1.0.0",
         "com.unity.xr.arsubsystems": "4.2.1",
+=======
+      "version": "4.2.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0",
+        "com.unity.xr.arsubsystems": "4.2.3",
+>>>>>>> Stashed changes
         "com.unity.xr.management": "4.0.1"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arkit-face-tracking": {
+<<<<<<< Updated upstream
       "version": "4.2.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arkit": "4.2.1",
         "com.unity.xr.arsubsystems": "4.2.1"
+=======
+      "version": "4.2.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.arkit": "4.2.3",
+        "com.unity.xr.arsubsystems": "4.2.3"
+>>>>>>> Stashed changes
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arsubsystems": {
+<<<<<<< Updated upstream
       "version": "4.2.1",
+=======
+      "version": "4.2.3",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -351,6 +520,7 @@
         "com.unity.xr.management": "4.0.1"
       },
       "url": "https://packages.unity.com"
+<<<<<<< Updated upstream
     },
     "com.unity.xr.interaction.toolkit": {
       "version": "1.0.0-pre.5",
@@ -358,6 +528,24 @@
       "source": "registry",
       "dependencies": {
         "com.unity.inputsystem": "1.0.2",
+=======
+    },
+    "com.unity.xr.core-utils": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.xr": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.interaction.toolkit": {
+      "version": "2.1.0-pre.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.inputsystem": "1.3.0",
+>>>>>>> Stashed changes
         "com.unity.ugui": "1.0.0",
         "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
@@ -366,7 +554,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.8",
+      "version": "2.1.9",
       "depth": 1,
       "source": "registry",
       "dependencies": {
