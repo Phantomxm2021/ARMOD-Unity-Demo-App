@@ -4973,8 +4973,8 @@ namespace Unity.VisualScriptingGenerated.Aot
         {
             global::com.Phantoms.ActionNotification.Runtime.AnchorNotificationData target =
                 default(global::com.Phantoms.ActionNotification.Runtime.AnchorNotificationData);
-            global::UnityEngine.GameObject accessor = target.ControllerTargetNode;
-            target.ControllerTargetNode = default(global::UnityEngine.GameObject);
+            global::UnityEngine.GameObject accessor = target.AnchorPrefab;
+            target.AnchorPrefab = default(global::UnityEngine.GameObject);
             global::Unity.VisualScripting.InstanceFieldAccessor<
                 com.Phantoms.ActionNotification.Runtime.AnchorNotificationData,
                 UnityEngine.GameObject> optimized =

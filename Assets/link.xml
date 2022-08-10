@@ -8,20 +8,11 @@
     <assembly fullname="Phantoms.Models.Runtime" preserve="all"/>
     <assembly fullname="XRMODEngineCore.Runtime" preserve="all"/>
     <assembly fullname="Recorders.Libs" preserve="all"/>
-    
+
     <assembly fullname="com.Phantoms.ARMODRenderingAssistant.Runtime" preserve="all"/>
     <assembly fullname="com.Phantoms.ARMODAPI.Runtime" preserve="all"/>
-<<<<<<< Updated upstream
-    <assembly fullname="com.Phantoms.ARAlgorithm.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.SDKConfigures.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.SDKEntry.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.XRInteractionExtension.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Adapter" preserve="all"/>
-=======
-    
     <assembly fullname="com.Phantoms.UIExtension.Runtime" preserve="all"/>
-    <assembly fullname="ILRuntime.Adapter.Runtime" preserve="all"/>
->>>>>>> Stashed changes
+    <assembly fullname="ILRuntime.Adapter.Runtime" preserve="all"/>Ï
     <assembly fullname="com.Phantoms.ILRuntime" preserve="all"/>
     <assembly fullname="ILRuntime.Runtime.CLR" preserve="all"/>
     <assembly fullname="ILRuntime.Runtime.CLRBingding.CLR.ILRT" preserve="all"/>
