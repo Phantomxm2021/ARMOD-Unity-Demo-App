@@ -9,7 +9,7 @@ namespace UnityEngine.UI.Extensions
 {
     [CustomEditor(typeof(ScrollPositionController))]
     [CanEditMultipleObjects]
-    public class ScrollPositionControllerEditor : Editor
+    public class ScrollPositionControllerEditor : UnityEditor.Editor
     {
         SerializedProperty viewport;
         SerializedProperty directionOfRecognize;

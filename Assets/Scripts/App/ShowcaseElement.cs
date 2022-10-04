@@ -10,7 +10,7 @@ namespace UnityARMODApp.Runtime
         public Text ShowcaseTitleText;
         public Text ShowcaseBriefText;
         public Image ShowcaseIconImage;
-        public string ShowcaseId;
+        public string ProjectId;
         public Action<string> ClickedEvent;
         
         /// <summary>
@@ -19,7 +19,7 @@ namespace UnityARMODApp.Runtime
         /// <param name="_eventData"></param>
         public void OnPointerClick(PointerEventData _eventData)
         {
-            ClickedEvent?.Invoke(ShowcaseId);
+            ClickedEvent?.Invoke(ProjectId);
         }
     }
 }

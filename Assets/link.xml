@@ -1,19 +1,26 @@
 <linker>
+    <!--Base Module-->
+    <assembly fullname="HandheldARModule.Runtime" preserve="all"/>
+    <assembly fullname="GLTFExtension.Runtime" preserve="all"/>
+    <assembly fullname="SDKEntry.Runtime" preserve="all"/>
+    <assembly fullname="BaseFeaturesModule.Runtime" preserve="all"/>
+    <assembly fullname="BaseFeaturesModule.Runtime" preserve="all"/>
+    <assembly fullname="Phantoms.Models.Runtime" preserve="all"/>
+    <assembly fullname="XRMODEngineCore.Runtime" preserve="all"/>
+    <assembly fullname="Recorders.Libs" preserve="all"/>
+
     <assembly fullname="com.Phantoms.ARMODRenderingAssistant.Runtime" preserve="all"/>
     <assembly fullname="com.Phantoms.ARMODAPI.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.ARAlgorithm.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.SDKConfigures.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.SDKEntry.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.XRInteractionExtension.Runtime" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Adapter" preserve="all"/>
+    <assembly fullname="com.Phantoms.UIExtension.Runtime" preserve="all"/>
+    <assembly fullname="ILRuntime.Adapter.Runtime" preserve="all"/>Ï
     <assembly fullname="com.Phantoms.ILRuntime" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Runtime.CLR" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Runtime.CLRBingding.CLR.ILRT" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Runtime.CLRBingding.CLR.Phantoms" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Runtime.CLRBingding.CLR.System" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Runtime.CLRBingding.CLR.UnityEngine" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.Runtime.CodeHook" preserve="all"/>
-    <assembly fullname="com.Phantoms.ILRuntime.ValueBinder" preserve="all"/>
+    <assembly fullname="ILRuntime.Runtime.CLR" preserve="all"/>
+    <assembly fullname="ILRuntime.Runtime.CLRBingding.CLR.ILRT" preserve="all"/>
+    <assembly fullname="ILRuntime.Runtime.CLRBingding.CLR.Phantoms" preserve="all"/>
+    <assembly fullname="ILRuntime.Runtime.CLRBingding.CLR.System" preserve="all"/>
+    <assembly fullname="ILRuntime.Runtime.CLRBingding.CLR.UnityEngine" preserve="all"/>
+    <assembly fullname="ILRuntime.Runtime.CodeHook" preserve="all"/>
+    <assembly fullname="ILRuntime.ValueBinder" preserve="all"/>
     <assembly fullname="com.PhantomsXR.VisualScriptingExtension.Runtime" preserve="all"/>
     <assembly fullname="com.Phantoms.WebrequestExtension.Runtime" preserve="all"/>
     <assembly fullname="com.PhantomsXR.MirrorExtension.Runtime" preserve="all"/>
@@ -24,5 +31,7 @@
     <assembly fullname="Unity.XR.Interaction" preserve="all"/>
     <assembly fullname="Unity.InputSystem" preserve="all"/>
     <assembly fullname="NavMeshComponents" preserve="all"/>
-    <assembly fullname="UnityEngine" preserve="all"/>
+    <assembly fullname="UnityEngine.CoreModule" preserve="all"/>
+    <assembly fullname="UnityEngine.AudioModule" preserve="all"/>
+    <assembly fullname="UnityEngine.PhysicsModule" preserve="all"/>
 </linker>

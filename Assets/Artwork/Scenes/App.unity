@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 44a212df97aa5431aa09bcb60b483400, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 5da8b7fd2f4d74636a5914e5a895c00e, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -572,8 +572,8 @@ MonoBehaviour:
   SDKConfiguration:
     engineType: 0
     dashboardConfig:
-      dashboardGateway: https://weacw.com/api/v1/getarexperience
-      token: eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxODc2OTkzMSwiZXhwIjoxMDI1ODc2OTkzMX0.eyJwYWNrYWdlaWQiOiJjb20ucGhhbnRvbXMuYXJtb2QiLCJ1c2VyX3VpZCI6MTAxMjQ1MTU0M30.TZv-LKoNvQqnvpXKVDGhY7YNu1OFnazLBODbgdZydRsmyHD4z7Nd7kmi7Hbt4bLQndRcgGE_9IRvVjE64foCkQ
+      dashboardGateway: https://phantomsxr.cn/api/v2/getarresources
+      token: eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0NjQwNzkxNSwiZXhwIjoxMDI4NjQwNzkxNX0.eyJwYWNrYWdlaWQiOiJjb20ucGhhbnRvbXMuYXJtb2QiLCJ1c2VyX3VpZCI6MTAxMjQ1MTU0M30.JS0QsLI6ebMVN_HA9v9U1CT4YMP3BU-IheBojNrBxi282HUWS0LK8w9mG7XPSSsOy-hBopHlw7sP-fa-6wroAA
       timeout: 30
       maximumDownloadSize: 30
     imageCloudRecognizerConfig:
@@ -582,6 +582,7 @@ MonoBehaviour:
       frequencyOfScan: 0
     customConfig:
       config: 
+    AppModel: 0
   Home: {fileID: 842419330}
   ARView: {fileID: 1691692792}
   Background: {fileID: 835553282}
@@ -635,7 +636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53.80005, y: -56.899902}
+  m_AnchoredPosition: {x: 53.799805, y: -56.899902}
   m_SizeDelta: {x: 56.7573, y: 56.7573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320147119
@@ -755,7 +756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 74.40015, y: -360.35968}
+  m_AnchoredPosition: {x: 74.40039, y: -360.35962}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403226292
@@ -936,6 +937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -1321,8 +1323,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -352.5}
-  m_SizeDelta: {x: 0, y: -705}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745648375
 MonoBehaviour:
@@ -1592,7 +1594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829098734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1843,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.40014648, y: 22.4292}
+  m_AnchoredPosition: {x: -0.40039062, y: 22.4292}
   m_SizeDelta: {x: -52.173584, y: -551.233}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933520180
@@ -2038,7 +2040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 64.44701, y: -332.8813}
+  m_AnchoredPosition: {x: 64.44678, y: -332.88135}
   m_SizeDelta: {x: -177.7, y: 45.043}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095086049
@@ -2735,7 +2737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00048828125}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1.0000002}
 --- !u!114 &1951915108
@@ -2813,7 +2815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000021455968, y: 0}
+  m_AnchoredPosition: {x: 0.00014428634, y: 0}
   m_SizeDelta: {x: 0, y: 455}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2024383412

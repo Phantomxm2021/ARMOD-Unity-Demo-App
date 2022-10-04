@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
 using System.Threading.Tasks;
-using com.Phantoms.SDKConfigures.Runtime;
-using com.Phantoms.SDKEntry.Runtime;
+using com.phantoms.models.Runtime;
+using SDKEntry.Runtime;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -51,8 +51,8 @@ namespace UnityARMODApp.Runtime
         /// Start ARMOD
         /// </summary>
         /// <param name="_configuration">ARMOD SDK Configure</param>
-        /// <param name="_arExperienceId">unique id of AR Experience project</param>
-        public static async void LaunchAR(SDKConfiguration _configuration, string _arExperienceId)
+        /// <param name="_projectId">unique id of AR Experience project</param>
+        public static async void LaunchAR(SDKConfiguration _configuration, string _projectId)
         {
             //Reinitialization
             SDKInitialization.Initialize();
@@ -62,7 +62,7 @@ namespace UnityARMODApp.Runtime
             //Init and launch
             var tmp_SDKEntryPoint = UnityEngine.Object.FindObjectOfType<SDKEntryPoint>();
             tmp_SDKEntryPoint.InitSDK(JsonUtility.ToJson(_configuration));
-            tmp_SDKEntryPoint.LaunchARQuery(_arExperienceId);
+            tmp_SDKEntryPoint.LaunchXRQuery(_projectId);
             
         }
 
