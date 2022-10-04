@@ -108,3 +108,31 @@ The following packages were updated:
   com.unity.timeline from version 1.6.3 to 1.6.4
   com.unity.xr.arcore from version 4.2.2 to 4.2.3
   com.unity.xr.arkit from version 4.2.2 to 4.2.3
+
+=== Wed Aug 31 17:26:26 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.15.18 to 1.17.1
+  com.unity.purchasing from version 4.1.5 to 4.3.0
+
+=== Tue Sep 20 15:43:11 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.17.1 to 1.17.2
+  com.unity.purchasing from version 4.3.0 to 4.4.0
+  com.unity.xr.interaction.toolkit from version 2.0.0 to 2.0.2
+  com.unity.xr.legacyinputhelpers from version 2.1.9 to 2.1.10
+
+=== Mon Oct  3 23:28:21 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.purchasing from version 4.4.0 to 4.4.1

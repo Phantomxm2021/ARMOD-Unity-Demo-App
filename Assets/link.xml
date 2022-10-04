@@ -31,5 +31,7 @@
     <assembly fullname="Unity.XR.Interaction" preserve="all"/>
     <assembly fullname="Unity.InputSystem" preserve="all"/>
     <assembly fullname="NavMeshComponents" preserve="all"/>
-    <assembly fullname="UnityEngine" preserve="all"/>
+    <assembly fullname="UnityEngine.CoreModule" preserve="all"/>
+    <assembly fullname="UnityEngine.AudioModule" preserve="all"/>
+    <assembly fullname="UnityEngine.PhysicsModule" preserve="all"/>
 </linker>

@@ -550,6 +550,7 @@ MonoBehaviour:
   - Classic3DUnityStandalone
   - Web3DNativeLibrary
   - Web3DUnityStandalone
+  Simulation: 0
 --- !u!114 &1258927361559528907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93c5a650b364ecfb8a278bc8b51d537, type: 3}
   m_Name: HandheldARUnityStandalone_Android
   m_EditorClassIdentifier: 
-  LaunchPrefab: {fileID: 5243922270969641312, guid: 8dd00eea499c5470b9e6faa3ec286490, type: 3}
+  LaunchPrefab: {fileID: 2557903794090995427, guid: 2c29b4e7588a04c9b9f9887069b58357, type: 3}
   Version: {x: 2, y: 0, z: 0}
   ScriptingDefineSymbols:
   - ENABLE_IMMERSAL
