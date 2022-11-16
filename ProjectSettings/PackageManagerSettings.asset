@@ -25,18 +25,20 @@ MonoBehaviour:
     m_Scopes: []
     m_IsDefault: 1
     m_Capabilities: 7
-  - m_Id: scoped:ARMOD
-    m_Name: ARMOD
-    m_Url: https://registry.npmjs.org
+    m_ConfigSource: 0
+  - m_Id: scoped:project:XRMOD
+    m_Name: XRMOD
+    m_Url: https://registry.cn.phantomsxr.com
     m_Scopes:
     - com.phantomsxr
     m_IsDefault: 0
     m_Capabilities: 0
-  m_UserSelectedRegistryName: 
+    m_ConfigSource: 4
+  m_UserSelectedRegistryName: XRMOD
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
     m_Modified: 0
     m_ErrorMessage: 
-    m_UserModificationsInstanceId: -828
+    m_UserModificationsInstanceId: -830
     m_OriginalInstanceId: -832
   m_LoadAssets: 0

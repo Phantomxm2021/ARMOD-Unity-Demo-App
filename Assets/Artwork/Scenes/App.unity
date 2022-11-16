@@ -572,8 +572,8 @@ MonoBehaviour:
   SDKConfiguration:
     engineType: 0
     dashboardConfig:
-      dashboardGateway: https://phantomsxr.cn/api/v2/getarresources
-      token: eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0NjQwNzkxNSwiZXhwIjoxMDI4NjQwNzkxNX0.eyJwYWNrYWdlaWQiOiJjb20ucGhhbnRvbXMuYXJtb2QiLCJ1c2VyX3VpZCI6MTAxMjQ1MTU0M30.JS0QsLI6ebMVN_HA9v9U1CT4YMP3BU-IheBojNrBxi282HUWS0LK8w9mG7XPSSsOy-hBopHlw7sP-fa-6wroAA
+      dashboardGateway: https://phantomsxr.com/api/v2/client/getarresources
+      token: eyJhbGciOiJIUzUxMiIsImlhdCI6MTY2NjY4MDA3MiwiZXhwIjoxMDMwNjY4MDA3Mn0.eyJhcHBfcGFja2FnZV9pZCI6ImNvbS5waGFudG9tLmFybW9kIiwidXNlcl91aWQiOjM2NTU4OTM3MjF9.wELQo3WOE9ujXvqol46eghLPSfsds1FalAEggsJTM5X1pwypzVgS4uwtIoNnDXXZ7Wj0pCDI1wOySUiGThAcgQ
       timeout: 30
       maximumDownloadSize: 30
     imageCloudRecognizerConfig:
@@ -954,6 +954,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &552322570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,7 +1905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1017815576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2737,7 +2738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00036621094}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1.0000002}
 --- !u!114 &1951915108
@@ -2815,8 +2816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00014428634, y: 0}
-  m_SizeDelta: {x: 0, y: 455}
+  m_AnchoredPosition: {x: -0.0000096162985, y: 0}
+  m_SizeDelta: {x: -3981.4038, y: 455}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2024383412
 MonoBehaviour:

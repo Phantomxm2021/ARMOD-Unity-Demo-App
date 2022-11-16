@@ -7,7 +7,13 @@ namespace UnityARMODApp.Runtime
     {
         public int code;
         public string msg;
-        public List<XRProject> data;
+        public AllXRProjects data;
+    }
+
+    [System.Serializable]
+    public class AllXRProjects
+    {
+        public List<XRProject> all_project;
     }
 
     [System.Serializable]
@@ -15,11 +21,10 @@ namespace UnityARMODApp.Runtime
     {
         public int app_uid;
         public int user_uid;
-        public string project_id;
+        public string project_uid;
         public string project_name;
         public string project_brief;
         public string project_icon;
-        public List<string> showcase_not_index_tags;
     }
     
     [System.Serializable]
@@ -35,11 +40,11 @@ namespace UnityARMODApp.Runtime
     {
         public int app_uid;
         public int user_uid;
-        public string project_id;
+        public string project_uid;
         public string project_name;
         public string project_icon;
         public string project_header;
         public string project_description;
-        public string project_preview;
+        public string project_previews;
     }
 }

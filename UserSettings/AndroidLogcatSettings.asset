@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "5XAECU5H5HKNMBU8",
     "m_SelectedPackage": {
-        "deviceId": "5XAECU5H5HKNMBU8",
-        "name": "com.phantoms.armod",
-        "processId": 25908,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 4,
@@ -11,49 +11,37 @@
         {
             "deviceId": "5XAECU5H5HKNMBU8",
             "name": "com.phantoms.armod",
-            "processId": 18952,
-            "exited": true
-        },
-        {
-            "deviceId": "5XAECU5H5HKNMBU8",
-            "name": "com.oppo.launcher",
-            "processId": 2487,
-            "exited": false
-        },
-        {
-            "deviceId": "5XAECU5H5HKNMBU8",
-            "name": "com.phantoms.armod",
-            "processId": 20461,
-            "exited": true
-        },
-        {
-            "deviceId": "5XAECU5H5HKNMBU8",
-            "name": "com.phantoms.armod",
-            "processId": 21414,
-            "exited": true
-        },
-        {
-            "deviceId": "5XAECU5H5HKNMBU8",
-            "name": "com.phantoms.armod",
-            "processId": 22641,
-            "exited": true
-        },
-        {
-            "deviceId": "5XAECU5H5HKNMBU8",
-            "name": "com.phantoms.armod",
             "processId": 23611,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "5XAECU5H5HKNMBU8",
             "name": "com.phantoms.armod",
             "processId": 24311,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "5XAECU5H5HKNMBU8",
             "name": "com.phantoms.armod",
             "processId": 25908,
+            "exited": true
+        },
+        {
+            "deviceId": "5XAECU5H5HKNMBU8",
+            "name": "com.android.settings",
+            "processId": 7938,
+            "exited": false
+        },
+        {
+            "deviceId": "5XAECU5H5HKNMBU8",
+            "name": "com.phantoms.armod",
+            "processId": 30276,
+            "exited": true
+        },
+        {
+            "deviceId": "5XAECU5H5HKNMBU8",
+            "name": "com.android.launcher",
+            "processId": 3300,
             "exited": false
         }
     ],

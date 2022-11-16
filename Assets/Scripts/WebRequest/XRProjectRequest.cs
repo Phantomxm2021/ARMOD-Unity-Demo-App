@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using com.Phantoms.WebRequestExtension.Runtime.WebRequest;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 namespace UnityARMODApp.Runtime
@@ -38,12 +39,18 @@ namespace UnityARMODApp.Runtime
             var tmp_Form = new WWWForm();
             tmp_Form.AddField("packageid", Application.identifier);
             tmp_Form.AddField("project_id", _projectId);
-            var tmp_WebRequestSender = new WebRequestWithProgress(_timeout: 60);
-            tmp_Response = await tmp_WebRequestSender.SendRequest(new Uri(_url),
-                "POST", tmp_Headers, tmp_Form);
+            var progress = Progress.Create<float>(NativePlugins.Plugin.NativeAPI.UpdateLoadingProgress);
+            var tmp_WebRequestSender = UnityWebRequest.Post(_url, tmp_Form);
+            foreach (KeyValuePair<string, string> tmp_Header in tmp_Headers)
+            {
+                tmp_WebRequestSender.SetRequestHeader(tmp_Header.Key, tmp_Header.Value);
+            }
 
+            tmp_WebRequestSender.timeout = 60;
+            await tmp_WebRequestSender.SendWebRequest().ToUniTask(progress);
+            tmp_Response = tmp_WebRequestSender.downloadHandler.text;
             if (!string.IsNullOrEmpty(tmp_Response) && !tmp_Response.Contains("Error")) return tmp_Response;
-            Debug.LogError(tmp_Response);
+            Debug.LogError(tmp_WebRequestSender.error);
             return null;
         }
 
@@ -55,13 +62,26 @@ namespace UnityARMODApp.Runtime
                 $"Token {FindObjectOfType<AppMain>().SDKConfiguration.dashboardConfig.token}");
             tmp_Headers.Add("Content-Type", "application/x-www-form-urlencoded");
 
-            var tmp_WebRequestSender = new WebRequestWithProgress(_timeout: 60);
-            tmp_Response =
-                await tmp_WebRequestSender.SendRequest(new Uri(_url), "GET", tmp_Headers, Array.Empty<byte>());
+            var tmp_WebRequestSender = UnityWebRequest.Get(new Uri($"{_url}&platform={GetCurPlatform()}"));
+            foreach (KeyValuePair<string, string> tmp_Header in tmp_Headers)
+            {
+                tmp_WebRequestSender.SetRequestHeader(tmp_Header.Key, tmp_Header.Value);
+            }
 
+            await tmp_WebRequestSender.SendWebRequest();
+            tmp_Response = tmp_WebRequestSender.downloadHandler.text;
             if (!string.IsNullOrEmpty(tmp_Response) && !tmp_Response.Contains("Error")) return tmp_Response;
             Debug.LogError(tmp_Response);
             return null;
+        }
+
+        private string GetCurPlatform()
+        {
+#if UNITY_IOS
+            return "iOS";
+#elif UNITY_ANDROID
+            return "Android";
+#endif
         }
 
         /// <summary>
@@ -90,8 +110,9 @@ namespace UnityARMODApp.Runtime
         /// </summary>
         private async void CreateRecommendList()
         {
-            var tmp_Response = await PostNetworkQuery(Path.Combine(ConstKey.CONST_BASE_GATEWAY_KEY,
-                ConstKey.CONST_GET_RECOMMEND_SHOWCASE_KEY));
+            var tmp_Url =
+                $"{ConstKey.CONST_BASE_GATEWAY_KEY}{ConstKey.CONST_GET_RECOMMEND_SHOWCASE_KEY}?app_package_id={Application.identifier}&page_num=1&page_size=20";
+            var tmp_Response = await GetNetworkQuery(tmp_Url);
             if (string.IsNullOrEmpty(tmp_Response))
             {
                 Debug.LogError("Query empty!");
@@ -99,7 +120,7 @@ namespace UnityARMODApp.Runtime
             }
 
             recommendXRProjectMapper = JsonUtility.FromJson<RecommendXRProjectMapper>(tmp_Response);
-            foreach (RecommendXRProjectData tmp_ShowcaseData in recommendXRProjectMapper.data)
+            foreach (RecommendXRProjectData tmp_ShowcaseData in recommendXRProjectMapper.data.all_project)
             {
                 //Create recommend element
                 var tmp_RecommendCloneGO = Instantiate(RecommendUIPrefab, RecommendListHolder);
@@ -110,7 +131,7 @@ namespace UnityARMODApp.Runtime
 
                 //Full in data for each recommend elements
                 var tmp_RecommendElement = tmp_RecommendCloneGO.GetComponent<RecommendElement>();
-                tmp_RecommendElement.ShowcaseId = tmp_ShowcaseData.project_id.ToString();
+                tmp_RecommendElement.ShowcaseId = tmp_ShowcaseData.project_uid.ToString();
                 tmp_RecommendElement.RecommendBriefText.text = tmp_ShowcaseData.project_brief;
                 tmp_RecommendElement.RecommendTitleText.text = tmp_ShowcaseData.project_name;
                 //Accessing and download to image from web url,It maybe return a `Sprite`
@@ -133,7 +154,7 @@ namespace UnityARMODApp.Runtime
                 Path.Combine(ConstKey.CONST_BASE_GATEWAY_KEY, ConstKey.CONST_GET_SHOWCASE_KEY);
             var tmp_Response =
                 await GetNetworkQuery(
-                    $"{tmp_GetXRExperienceListUrl}?packageid={Application.identifier}&page_num=1&page_size=20");
+                    $"{tmp_GetXRExperienceListUrl}?app_package_id={Application.identifier}&page_num=1&page_size=20");
             if (string.IsNullOrEmpty(tmp_Response))
             {
                 Debug.LogError("Query empty!");
@@ -141,7 +162,7 @@ namespace UnityARMODApp.Runtime
             }
 
             xrProjectMapper = JsonUtility.FromJson<XRProjectMapper>(tmp_Response);
-            foreach (XRProject tmp_ShowcaseData in xrProjectMapper.data)
+            foreach (XRProject tmp_ShowcaseData in xrProjectMapper.data.all_project)
             {
                 //Create all showcase elements
                 var tmp_ARExperienceSingleItem = Instantiate(ARExperienceListItemPrefab, ARExperienceListHolder);
@@ -152,7 +173,7 @@ namespace UnityARMODApp.Runtime
 
                 //Full in data for each showcase elements
                 var tmp_ARExperienceSingleItemElement = tmp_ARExperienceSingleItem.GetComponent<ShowcaseElement>();
-                tmp_ARExperienceSingleItemElement.ProjectId = tmp_ShowcaseData.project_id;
+                tmp_ARExperienceSingleItemElement.ProjectId = tmp_ShowcaseData.project_uid;
                 tmp_ARExperienceSingleItemElement.ShowcaseBriefText.text = tmp_ShowcaseData.project_brief;
                 tmp_ARExperienceSingleItemElement.ShowcaseTitleText.text = tmp_ShowcaseData.project_name;
                 //Accessing and download to image from web url,It maybe return a `Sprite`
@@ -175,8 +196,8 @@ namespace UnityARMODApp.Runtime
         /// <returns>Showcase Data</returns>
         private XRProject FindShowcaseDataByShowcaseId(string _projectId)
         {
-            return xrProjectMapper.data.Find((_showcase =>
-                String.Compare(_showcase.project_id, _projectId, StringComparison.Ordinal) == 0));
+            return xrProjectMapper.data.all_project.Find((_showcase =>
+                String.Compare(_showcase.project_uid, _projectId, StringComparison.Ordinal) == 0));
         }
 
         /// <summary>
@@ -192,8 +213,10 @@ namespace UnityARMODApp.Runtime
             //2. Show pop window
             DetailPopWindow.gameObject.SetActive(true);
             DetailPopWindow.PopWindow(true);
-            var tmp_QueryData = await PostNetworkQuery(Path.Combine(ConstKey.CONST_BASE_GATEWAY_KEY,
-                ConstKey.CONST_GET_SHOWCASE_DETAIL_KEY), tmp_Showcase.project_id);
+            var tmp_Url =
+                $"{ConstKey.CONST_BASE_GATEWAY_KEY}{ConstKey.CONST_GET_SHOWCASE_DETAIL_KEY}?project_uid={tmp_Showcase.project_uid}";
+            var tmp_QueryData = await GetNetworkQuery(tmp_Url);
+
             var tmp_ShowcaseDetailData = JsonUtility.FromJson<XRProjectDetail>(tmp_QueryData).data;
 
             //3. Full in data to pop window
@@ -224,7 +247,7 @@ namespace UnityARMODApp.Runtime
 
                 //Start AR
                 Utility.LaunchAR(FindObjectOfType<AppMain>().SDKConfiguration,
-                    tmp_ShowcaseDetailData.project_id);
+                    tmp_ShowcaseDetailData.project_uid);
 
                 //Register event for AR user interface, Disable the AR and exit.
                 var tmp_CloseBtnGO = tmp_ARPPMainScript.ARView.transform.Find("Close");

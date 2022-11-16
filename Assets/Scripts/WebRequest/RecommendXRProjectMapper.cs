@@ -7,15 +7,21 @@ namespace UnityARMODApp.Runtime
     {
         public int code;
         public string msg;
-        public List<RecommendXRProjectData> data;
+        public AllRecommendXRProjects data;
     }
 
+    
+    [System.Serializable]
+    public class AllRecommendXRProjects
+    {
+        public List<RecommendXRProjectData> all_project;
+    }
     [System.Serializable]
     public class RecommendXRProjectData
     {
         public int app_uid;
         public int user_uid;
-        public string project_id;
+        public string project_uid;
         //public string project_uid;
         public string project_name;
         public string project_brief;
